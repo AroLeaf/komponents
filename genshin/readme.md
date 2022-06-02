@@ -44,11 +44,21 @@ and a vps.
 ### Without web server
 
 1. Get your cookies from Hoyolab (on desktop):
-   Go to [your battle chronicle][bc], open the developer console, and run `copy(document.cookie)`.
+   Go to [your battle chronicle][bc], open the developer console,
+   and run `copy(document.cookie)`.
    You can now paste your cookies and send them to your phone.
 
 2. Import the `resin_standalone_*` Automate flows into Automate,
-   and set the `Cookie` field of the request headers in their http blocks to your cookies.
+   and add your info to the http blocks:
+   - in the url, replace `uid` with your uid,
+     and `os_serv` with one of the following,
+     based on the first character of your uid:
+     - 6: `os_usa`
+     - 7: `os_euro`
+     - 8: `os_asia`
+     - 9: `os_cht`
+   - in the request headers, the `Cookie` field to your cookies.
+   
 
 3. Import the komponent into the Kustom app you are using,
    and change the shortcut action of the refresh button to
