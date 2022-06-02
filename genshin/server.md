@@ -93,12 +93,12 @@ They should be in this order! (blame Kustom for not having proper json decoding)
 
 ### Example Mappings
 
-Which fields from Hoyolab correspond to fields sent by your server, where `notes` is `<response data>.data`.
+Which fields from Hoyolab might correspond to fields sent by your server, where `notes` is `<hoyolab response data>.data`.
 
 ```js
 {
   again_after           notes.current_resin < notes.max_resin 
-                          ? parseInt(notes.resin_recovery_time) % 480 
+                          ? parseInt(notes.resin_recovery_time) % 480 + 5
                           : 480
   resin:                notes.current_resin,
   resin_max:            notes.max_resin,
