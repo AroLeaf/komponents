@@ -70,7 +70,7 @@ The `Accept-Encoding` can be set to `identity` if you want to receive uncompress
 - `commissions_max`: how many daily commissions there are
 - `commissions_rewarded`: if you collected your daily commission reward from Katheryne today
 - `coins`: how much realm currency you have
-- `coins_max`: how much realm currenncy you can have at most
+- `coins_max`: how much realm currency you can have at most
 
 They should be in this order! (blame Kustom for not having proper json decoding)
 

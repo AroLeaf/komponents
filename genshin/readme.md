@@ -3,7 +3,7 @@
 > **WARNING!**\
 > This widget is far from ready out-of-the-box,
 > it requires two automate flows
-> and a web server to function properly.
+> and optionally a web server to function properly.
 
 A widget to show:
 - commissions
