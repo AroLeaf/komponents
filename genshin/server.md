@@ -14,7 +14,7 @@ and a vps.
 If you really want to keep it in Automate,
 here's how you would generate the `DS` header:
 ```
-Now ++ ",Noelle," ++ md5("salt=6s25p5ox5y14umn1p61aqyyvbvvl3lrt&t=" ++ Now ++"&r=Noelle", "h")
+"{Now},Noelle,{md5("salt=6s25p5ox5y14umn1p61aqyyvbvvl3lrt&t={Now}&r=Noelle", "h")}"
 ```
 The salt should not be changed.
 "Noelle" can be replaced by any other
